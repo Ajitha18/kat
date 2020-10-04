@@ -1,5 +1,5 @@
 .bg-image {
-    height: 100em;
+    height: auto;
      background-size:cover; width:auto;
      background-image:url('../assets/images/old.jpg');
      background-position:50% 50%;
@@ -23,31 +23,43 @@
 //   }
 
   .main-text {
+    text-align: center;
     color: black; 
     font-family: "Courier";
-    font-size: 40px;
+    font-size: 70px;
     margin: 0px;
     white-space: nowrap;
     overflow: hidden;
     width: 30em;
-    animation: type 8s steps(60, end); 
+    animation: type 8s steps(60, end);
+    padding: 70px 0px;
   }
   
   @keyframes type{ 
     from { width: 0; } 
   } 
 
+  .bday-text {
+    font-family: "Courier";
+    font-size: 70px;
+    margin: 0px;
+    padding: 70px 30px;
+  }
+
   .container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
     
     p {
+      text-align: left;
       min-width: 33.33%;
       padding: 10px;
-      font-size: 50px;
+      font-size: 70px;
       font-style: italic;
       text-shadow: 2px 2px 2px #CCCCCC;
       font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;;
