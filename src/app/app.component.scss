@@ -1,0 +1,55 @@
+.bg-image {
+    height: 100em;
+     background-size:cover; width:auto;
+     background-image:url('../assets/images/old.jpg');
+     background-position:50% 50%;
+}
+
+.b-text {
+    font-size: 140px;
+    margin-top: 0px;
+}
+
+// .center {
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 50%;
+ 
+//   }
+//   .img {
+//     padding-top: 20px;
+//     border-radius: 20px;
+//   }
+
+  .main-text {
+    color: black; 
+    font-family: "Courier";
+    font-size: 40px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 8s steps(60, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      min-width: 33.33%;
+      padding: 10px;
+      font-size: 50px;
+      font-style: italic;
+      text-shadow: 2px 2px 2px #CCCCCC;
+      font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;;
+    }
+  }
