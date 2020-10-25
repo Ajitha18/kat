@@ -1,13 +1,17 @@
-<div class="bg-image">
+<div class="bg-image" *ngIf="isMain">
   <!-- <h1 class="b-text" style="text-align: center;"> 
   Happiee birthday to you
 </h1> -->
-  <p class="bday-text">இனிய பிறந்த நாள் நல்வாழ்த்துக்கள்</p>
+  <p class="bday-text center">இனிய பிறந்த நாள் நல்வாழ்த்துக்கள்</p>
   <div class="container">
-  <p>Wish list</p>
-  <p style="padding-left: 60px">Favorites</p>
-  <p>Fun</p>
-  <p style="padding-left: 60px">Happy</p>
+  <!-- <div><button mat-raised-button class="btn"><span class="side-headings">Wish list</span></button></div>
+  <div style=" padding-left: 60px"><button style="float: right" mat-raised-button class="btn"><span class="side-headings">Favorites</span></button></div>
+  <div style=""><button mat-raised-button class="btn"><span class="side-headings">Fun</span></button></div>
+  <div style=" padding-left: 60px"><button style="float: right" mat-raised-button class="btn"><span class="side-headings">Happy</span></button></div> -->
+<div><button mat-raised-button class="btn" (click)="onClick()" routerLink="/things"><span class="side-headings">And the one where things convey wishes</span></button></div>
+<div><button mat-raised-button class="btn" (click)="onClick()" routerLink="/characters"><span class="side-headings">And the one with characters</span></button></div>
+<div><button mat-raised-button class="btn" (click)="onClick()"><span class="side-headings">And the one with some fun</span></button></div>
+<div><button mat-raised-button class="btn" (click)="onClick()"><span class="side-headings">And the one with emotions</span></button></div>
 </div>
   <div>
     அன்று பகற்பொழுது வந்தியத்தேவனுக்கு எளிதில் போய்விட்டது. பாதி நேரத்துக்கு மேல் தூங்கிக் கழித்தான். விழித்திருந்த
@@ -73,7 +77,8 @@
     என்னவாயிருக்கும்?...'இவ்வாறு வந்தியத்தேவன் சிந்தனை செய்து கொண்டிருந்த சமயங்களில், பூங்குழலி கூறியிருந்தது போலவே, அவனைச் சுற்றி
     நாலாபுறங்களிலும் அடிக்கடி அமளிதுமளிப்பட்டது. குதிரைகளின் ஓட்டம், மனிதர்களின் அட்டகாசம், சிறிய வன ஜந்துக்களின் பயம்
     நிறைந்த கூச்சல், பறவைகள் கிறீச்சிடுதல் - இவ்வளவும் சேர்ந்து சில சமயம் ஒரே அமர்க்களமாயிருந்தது. அடுத்தாற்போல் அமைதி
-    குடிகொண்டு நிசப்தமாயுமிருந்தது. அமர்க்களப்பட்டதெல்லாம் தன்னைச் தேடிப் பிடிப்பதற்காகத்தான் என்று வந்தியத்தேவன்
+    குடிகொண்டு நிசப்தமாயுமிருந்தது. 
+    <!-- அமர்க்களப்பட்டதெல்லாம் தன்னைச் தேடிப் பிடிப்பதற்காகத்தான் என்று வந்தியத்தேவன்
     உணர்ந்தான். வைத்தியரின் மகன் செய்த துரோகமும் அவனுடைய மனத்தில் அடிக்கடி வந்து கொண்டிருந்தது!
     'நிர்மூடன்! பூங்குழலியிடம் அதற்குள் மையல் கொண்டு விட்டதாக அவனுக்கு எண்ணம் போலும்! சிறிய குட்டையில் உள்ள தண்ணீர் வடவா
     முகாக்கினியின் மீது காதல் கொண்டது போலத் தான்! பெண் சிங்கத்தை ஒரு சுண்டெலி கல்யாணம் செய்து கொள்ள எண்ணிய கதைதான்!
@@ -89,6 +94,8 @@
     கிழக்கு - மேற்கு - தெற்கு ஆகிய மூன்று திசைகளிலும் கடல் பரந்திருக்கக் காணலாம். சிற்சில மாதங்களில் சூரிய சந்திரர்கள்
     கிழக்குக் கடலில் ஜோதிமயமாக உதயமாவதையும் பார்க்கலாம். மேற்கே கடலைத் தங்கமயமாகச் செய்து கொண்டு முழுகி மறைவதையும்
     காணலாம். வந்தியத்தேவனுக்கு மண்டபத்தை மூடியிருந்த மணல்திட்டின் மேல் ஏறிச் சூரியன் கடலில் மறையும் காட்சியைப் பார்க்க
-    ஆவல் உண்டாயிற்று.
+    ஆவல் உண்டாயிற்று. -->
   </div>
+  
 </div>
+<router-outlet *ngIf="!isMain"></router-outlet>
