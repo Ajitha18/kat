@@ -1,0 +1,46 @@
+.b-text {
+    font-size: 140px;
+    margin-top: 0px;
+}
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+
+  .bday-text {
+    font-family: "Courier";
+    font-size: 70px;
+    margin: 0px;
+    padding: 70px 30px;
+    overflow-wrap: anywhere;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    .btn {
+      height: 60px;
+      max-height: auto;;
+      width: auto;
+      opacity: 0.8;
+      background-color: wheat;
+      border-radius: 50px;
+      margin: 30px;
+    }
+  }
+
+  .side-headings {
+    text-align: left;
+   // min-width: 33.33%;
+    padding: 10px;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #CCCCCC;
+    font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;;
+  }
