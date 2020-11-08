@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,10 +14,21 @@ import { FunComponent } from './fun/fun.component';
 import { EmotionsComponent } from './emotions/emotions.component';
 
 @NgModule({
-  declarations: [AppComponent, ThingsComponent, CharactersComponent, HomeComponent, FunComponent, EmotionsComponent],
-  imports: [BrowserModule, AppRoutingModule, MatButtonModule,
-    RoutingModule
-],
+  declarations: [
+    AppComponent,
+    ThingsComponent,
+    CharactersComponent,
+    HomeComponent,
+    FunComponent,
+    EmotionsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatButtonModule,
+    RoutingModule,
+    MatCardModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
