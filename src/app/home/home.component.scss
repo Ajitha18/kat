@@ -2,10 +2,14 @@
     font-size: 140px;
     margin-top: 0px;
 }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
+
+.disclaimer {
+ font-size: 50px;
+}
+
+  @keyframes type{
+    from { width: 0; }
+  }
 
   .bday-text {
     font-family: "Courier";
@@ -13,6 +17,25 @@
     margin: 0px;
     padding: 70px 30px;
     overflow-wrap: anywhere;
+  }
+
+  .animate {
+    animation: wish 3s forwards;
+  }
+
+  @keyframes wish {
+    0% {
+   opacity: 0;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    70%, 80% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .container {
@@ -23,7 +46,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    
+
     .btn {
       height: 60px;
       max-height: auto;;

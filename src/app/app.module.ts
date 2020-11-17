@@ -24,7 +24,6 @@ import { EmotionsComponent } from './emotions/emotions.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     MatButtonModule,
     RoutingModule,
     MatCardModule
