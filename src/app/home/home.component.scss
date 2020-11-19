@@ -67,3 +67,28 @@
     text-shadow: 2px 2px 2px #CCCCCC;
     font-family: Operator Mono A,Operator Mono B,Source Code Pro,Menlo,Consolas,Monaco,monospace;;
   }
+
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+    align-items: center;
+    background-color: white;
+
+    img {
+      max-width: 450px;
+      align-items: center;
+      height: 70%;
+    }
+
+    button {
+      height: 60px;
+      width: 200px;
+      font-size: 25px;
+      margin: 30px;
+      background-color: green;
+      color: white;
+      border-radius: 25px;
+    }
+  }

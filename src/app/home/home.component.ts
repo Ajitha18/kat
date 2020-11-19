@@ -3,14 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
   title = 'KatKaz';
-  constructor() { }
+  isLaunch: boolean;
+  constructor() {}
 
   ngOnInit(): void {
+    this.isLaunch = false;
   }
 
+  onClickBtn() {
+    this.isLaunch = true;
+  }
 }
