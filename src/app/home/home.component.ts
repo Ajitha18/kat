@@ -7,14 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title = 'KatKaz';
-  isLaunch: boolean;
   constructor() {}
 
   ngOnInit(): void {
-    this.isLaunch = false;
-  }
-
-  onClickBtn() {
-    this.isLaunch = true;
   }
 }

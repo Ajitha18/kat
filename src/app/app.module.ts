@@ -12,6 +12,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { HomeComponent } from './home/home.component';
 import { FunComponent } from './fun/fun.component';
 import { EmotionsComponent } from './emotions/emotions.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EmotionsComponent } from './emotions/emotions.component';
     HomeComponent,
     FunComponent,
     EmotionsComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

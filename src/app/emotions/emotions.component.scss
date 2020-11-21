@@ -1,0 +1,28 @@
+.colum {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+    margin: 20px;
+  }
+}
+div {
+  background-color: white;
+}
+.collections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    width: 30%;
+    height: auto;
+    margin: 30px;
+  }
+
+}

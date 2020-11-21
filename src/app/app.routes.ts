@@ -5,33 +5,35 @@ import { CharactersComponent } from './characters/characters.component';
 import { EmotionsComponent } from './emotions/emotions.component';
 import { FunComponent } from './fun/fun.component';
 import { HomeComponent } from './home/home.component';
+import { MainComponent } from './main/main.component';
 import { ThingsComponent } from './things/things.component';
 
 const routes: Routes = [
-
-    { path: '',   component: HomeComponent, pathMatch: 'full' },
-{
+  { path: '', component: MainComponent, pathMatch: 'full' },
+  {
+    path: 'HappyBirthday',
+    component: HomeComponent,
+  },
+  {
     path: 'things',
-    component: ThingsComponent
-},
-{
+    component: ThingsComponent,
+  },
+  {
     path: 'characters',
-    component: CharactersComponent
-},
-{
+    component: CharactersComponent,
+  },
+  {
     path: 'fun',
-    component: FunComponent
-},
-{
+    component: FunComponent,
+  },
+  {
     path: 'emotions',
-    component: EmotionsComponent
-}
+    component: EmotionsComponent,
+  },
 ];
 
 @NgModule({
-    imports: [ RouterModule.forRoot(routes) ],
-    exports: [
-        RouterModule
-     ] 
-  })
-  export class RoutingModule { };
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class RoutingModule {}
